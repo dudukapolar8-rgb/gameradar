@@ -157,3 +157,11 @@ export default function Home() {
     </main>
   );
         }
+<div className="bg-gray-800 p-6 rounded-2xl shadow-[0_0_25px_#0ea5e9] hover:shadow-[0_0_40px_#22d3ee] hover:scale-105 transform transition duration-300">
+  <img src={`https://via.placeholder.com/150?text=${r.source}`} className="rounded-lg mb-2 border-2 border-blue-500" />
+  <h3 className="font-bold text-lg text-white">{r.source}</h3>
+  <p className="text-green-400 font-bold">{r.score}/100</p>
+  {r.score > 85 && (
+    <span className="bg-blue-600 px-2 rounded-full text-sm mt-2 inline-block">Top avaliação</span>
+  )}
+</div>
